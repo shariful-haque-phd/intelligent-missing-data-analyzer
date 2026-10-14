@@ -1,0 +1,39 @@
+$ python src/analyze_missing.py sample/data.csv --mask-rate 0.15
+{
+  "results": {
+    "mean": {
+      "mean_rmse": 1879.8935185185185,
+      "per_column_rmse": {
+        "age": 13.555555555555557,
+        "income": 5625.0,
+        "tenure": 1.125
+      }
+    },
+    "median": {
+      "mean_rmse": 2838.1666666666665,
+      "per_column_rmse": {
+        "age": 13.0,
+        "income": 8500.0,
+        "tenure": 1.5
+      }
+    },
+    "knn": {
+      "mean_rmse": 3403.3333333333335,
+      "per_column_rmse": {
+        "age": 9.0,
+        "income": 10200.0,
+        "tenure": 1.0
+      }
+    },
+    "iterative_regression": {
+      "mean_rmse": 1353.4783588002672,
+      "per_column_rmse": {
+        "age": 1.7602306947207467,
+        "income": 4057.4435218609724,
+        "tenure": 1.2313238451084274
+      }
+    }
+  },
+  "recommended_method": "iterative_regression"
+}
+

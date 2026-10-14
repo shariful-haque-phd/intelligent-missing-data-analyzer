@@ -1,0 +1,31 @@
+{
+  "project_id": 4,
+  "repo_name": "004-intelligent-missing-data-analyzer",
+  "title": "Intelligent Missing Data Analyzer",
+  "theme": "Data Foundations & Engineering",
+  "theme_id": "T01",
+  "level": 1,
+  "level_label": "Foundations",
+  "prototype_status": "research prototype",
+  "primary_description": "Imputation benchmarking",
+  "research_question_proposed": "Which missing-value treatments preserve downstream analytical quality under controlled masking?",
+  "sample_files": [
+    "sample/data.csv"
+  ],
+  "source_modules": [
+    "src/analyze_missing.py"
+  ],
+  "commands_from_original_readme": [
+    "python src/analyze_missing.py sample/data.csv --mask-rate 0.15"
+  ],
+  "docs": [
+    "README.md",
+    "docs/RESEARCH.md",
+    "docs/ARCHITECTURE.md",
+    "docs/DEMO.md",
+    "docs/RESULTS.md"
+  ],
+  "source_origin": "github-level1-20-projects(1).zip",
+  "execution_status": "verified_local_execution",
+  "evidence": "results/execution.json"
+}

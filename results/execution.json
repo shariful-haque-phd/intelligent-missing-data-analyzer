@@ -1,0 +1,23 @@
+{
+  "id": "004",
+  "status": "executed",
+  "commands": [
+    "python src/analyze_missing.py sample/data.csv --mask-rate 0.15"
+  ],
+  "elapsed_seconds": 3.7,
+  "python": "3.13.5",
+  "inputs": [
+    {
+      "file": "sample/data.csv",
+      "sha256": "5d02e167d7e9fbd8442dfc9643d74c4580a815f5e7c6766be023b731ccb80814"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file": "results/execution.txt",
+      "sha256": "7bbc193566527a99a4fb03a78b18402fe5becc05569228f579d10288f18921cf",
+      "bytes": 866
+    }
+  ],
+  "observations": "Local execution using bundled fixtures; not an external performance evaluation."
+}
